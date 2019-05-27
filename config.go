@@ -298,15 +298,15 @@ type Pattern struct {
 	not   bool // True if this is a negated match
 }
 
-// String prints the string representation of the pattern.
-func (p Pattern) String() string {
-	return p.str
-}
-
 // SetStr set pattern str func
 func (p *Pattern) SetStr(str string) *Pattern {
 	p.str = str
 	return p
+}
+
+// String prints the string representation of the pattern.
+func (p Pattern) String() string {
+	return p.str
 }
 
 // Copied from regexp.go with * and ? removed.
