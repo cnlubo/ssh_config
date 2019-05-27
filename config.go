@@ -464,6 +464,12 @@ func (k *KV) String() string {
 	return line
 }
 
+// SetLeadingSpace set leading space value
+func (k *KV) SetLeadingSpace(leadingSpace uint16) *KV {
+	k.leadingSpace = leadingSpace
+	return k
+}
+
 // Empty is a line in the config file that contains only whitespace or comments.
 type Empty struct {
 	Comment      string
