@@ -1,4 +1,4 @@
-module ssh_config
+module github.com/cnlubo/ssh_config
 
 require (
 	github.com/kevinburke/ssh_config v0.0.0-20180830205328-81db2a75821e
