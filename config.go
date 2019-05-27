@@ -588,6 +588,11 @@ func (i *Include) Pos() Position {
 	return i.position
 }
 
+// GetFiles get files
+func (i *Include) GetFiles() map[string]*Config {
+	return i.files
+}
+
 // Get finds the first value in the Include statement matching the alias and the
 // given key.
 func (inc *Include) Get(alias, key string) string {
