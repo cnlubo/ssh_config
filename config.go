@@ -303,7 +303,7 @@ func (p Pattern) String() string {
 	return p.str
 }
 
-// SetStr set pattern str
+// SetStr set pattern str func
 func (p *Pattern) SetStr(str string) *Pattern {
 	p.str = str
 	return p
